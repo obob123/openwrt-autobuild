@@ -1,4 +1,4 @@
-name: 360-t7
+name: AX3000T
 
 on:
   workflow_dispatch:
@@ -159,8 +159,8 @@ jobs:
         artifacts: ${{ env.FIRMWARE_PATH }}/*
         body: |
           **This is OpenWrt Firmware for ${{ env.FIRMWARE_TAG }}**
-          ### 📒 固件信息(360-t7)
-          - 360-t7带MTK_OFFLOAD的固件，带openclash、zerotier
+          ### 📒 固件信息(AX3000T)
+          - AX3000T带MTK_OFFLOAD的固件，带openclash、zerotier
           - 💻 这是 ${{ env.FIRMWARE_TAG }} 平台使用的 immortalwrt 固件
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
